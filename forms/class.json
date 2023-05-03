@@ -1,0 +1,70 @@
+{
+  "title": "Class",
+  "sections": [
+    {
+      "title": "Short Description",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.shortDescription"
+        }
+      ]
+    },
+    {
+      "title": "Weapons",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.weapons"
+        }
+      ]
+    },
+    {
+      "title": "Armor",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.armor"
+        }
+      ]
+    },
+    {
+      "title": "Hit Points per Level",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Hit Points",
+          "type": "text",
+          "attribute": "data.hp"
+        }
+      ]
+    },
+    {
+      "title": "Features",
+      "type": "list",
+      "attribute": "data.features",
+      "form": {
+        "title": "Feature",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+              {
+                "title": "Text",
+                "type": "textArea",
+                "attribute": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

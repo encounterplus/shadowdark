@@ -1,0 +1,34 @@
+{
+  "debug": false,
+  "spacing": 12,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "views": [
+    {
+      "value": "{{name}}",
+      "style": "title2",
+      "alignment": "center",
+      "width": 0,
+      "bgColor": "#000000",
+      "padding": [6]
+    },
+    {
+      "value": "{{data.tier|default: '1'|prefix: 'Tier '}}, {{data.classes | join: ', '}}",
+      "style": "subtitle",
+    },
+    {
+      "type": "text",
+      "value": "{{data.duration|prefix: '**Duration**. '}}\n\n{{data.range|prefix: '**Range**. '}}",
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    }
+  ]
+}

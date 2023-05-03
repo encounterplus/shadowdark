@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Monster",
+    "label": "monster",
+    "collection": {
+      "label": "monsters"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Spell",
+    "label": "spell",
+    "collection": {
+      "label": "spells"
+    },
+    "loadable": true
+  },
+  {
+    "name": "Item",
+    "label": "item",
+    "collection": {
+      "label": "items"
+    },
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
+    "name": "Ancestry",
+    "label": "ancestry",
+    "collection": {
+      "label": "ancestries"
+    }
+  },
+  {
+    "name": "Class",
+    "label": "class",
+    "collection": {
+      "label": "classes"
+    }
+  },
+  {
+    "name": "Hero",
+    "label": "hero",
+    "collection": {
+      "label": "heroes"
+    },
+    "loadable": true,
+    "role": "friendly"
+  }
+]

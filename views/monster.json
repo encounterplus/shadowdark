@@ -1,0 +1,38 @@
+{
+  "debug": false,
+  "spacing": 12,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "views": [
+    {
+      "value": "{{name}}",
+      "style": "title2",
+      "alignment": "center",
+      "width": 0,
+      "bgColor": "#000000",
+      "padding": [6]
+    },
+    {
+      "value": "{{data.subtitle}}",
+      "style": "subtitle",
+    },
+    {
+      "type": "text",
+      "value": "{% include \"monster-stats.md\" %}",
+    },
+    {
+      "type": "text",
+      "value": "{% for action in data.actions %}**{{action.name}}.** {{action.text}}\n\n{% endfor %}",
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    }
+  ]
+}

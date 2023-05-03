@@ -1,0 +1,118 @@
+{
+  "title": "Monster",
+  "sections": [
+    {
+      "title": "Subtitle",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.subtitle"
+        }
+      ]
+    },
+    {
+      "title": "Attributes",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Armor Class",
+          "type": "number",
+          "attribute": "data.ac"
+        }, 
+        {
+          "title": "Hit Points",
+          "type": "number",
+          "attribute": "data.hp"
+        },
+        {
+          "title": "Movement",
+          "type": "text",
+          "attribute": "data.movement"
+        },
+        {
+          "title": "Alignment",
+          "type": "picker",
+          "attribute": "data.alignment",
+          "attributeType": "Alignment"
+        },
+        {
+          "title": "Level",
+          "type": "number",
+          "attribute": "data.level"
+        },
+      ]
+    },
+    {
+      "title": "Attacks",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Attacks detail",
+          "type": "textArea",
+          "attribute": "data.attacks"
+        }
+      ]
+    },
+    {
+      "title": "Stat Modifiers",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Strength",
+          "type": "number",
+          "attribute": "data.str"
+        },
+        {
+          "title": "Dexterity",
+          "type": "number",
+          "attribute": "data.dex"
+        },
+        {
+          "title": "Constitution",
+          "type": "number",
+          "attribute": "data.con"
+        },
+        {
+          "title": "Intelligence",
+          "type": "number",
+          "attribute": "data.int"
+        },
+        {
+          "title": "Wisdom",
+          "type": "number",
+          "attribute": "data.wis"
+        },
+        {
+          "title": "Charisma",
+          "type": "number",
+          "attribute": "data.cha"
+        },
+      ]
+    },
+    {
+      "title": "Actions",
+      "type": "list",
+      "attribute": "data.actions",
+      "form": {
+        "title": "Action",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+              {
+                "title": "Text",
+                "type": "textArea",
+                "attribute": "text"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

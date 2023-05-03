@@ -1,0 +1,114 @@
+{
+  "debug": false,
+  "spacing": 12,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "views": [
+    {
+      "value": "{{name}}",
+      "style": "title3",
+      "alignment": "center",
+      "width": 0,
+      "bgColor": "#000000",
+      "padding": [6]
+    },
+    {
+      "value": "Level {{data.level}}, {{data.class}}",
+      "style": "subtitle",
+    },
+    {
+      "type": "text",
+      "value": "{% include \"hero-stats.md\" %}",
+    },
+    {
+      "type": "vStack",
+      "borderColor": "#000000",
+      "borderWidth": 2,
+      "spacing": 0,
+      "views": [
+        {
+          "value": "Attacks",
+          "style": "title4",
+          "padding": [6, 12],
+          "bgColor": "#000000",
+          "width": -1
+        },
+        {
+          "type": "text",
+          "value": "{% for attack in data.attacks %}**{{attack.name}}.**, {{attack.attack}}, {{attack.damage|}}, {{attack.other}}\n\n{% endfor %}",
+          "padding": [8, 10]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "borderColor": "#000000",
+      "borderWidth": 2,
+      "spacing": 0,
+      "views": [
+        {
+          "value": "Talents",
+          "style": "title4",
+          "padding": [6, 12],
+          "bgColor": "#000000",
+          "width": -1
+        },
+        {
+          "type": "text",
+          "value": "{% for talent in data.talents %}**{{talent.name}}.** {{talent.descr}}\n\n{% endfor %}",
+          "padding": [8, 10]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "borderColor": "#000000",
+      "borderWidth": 2,
+      "spacing": 0,
+      "views": [
+        {
+          "value": "Spells",
+          "style": "title4",
+          "padding": [6, 12],
+          "bgColor": "#000000",
+          "width": -1
+        },
+        {
+          "type": "text",
+          "value": "{% for spell in data.spells %}[{{spell.name}}](spell) | Tier {{spell.definition.data.tier}}{% if spell.expended %} | Expended{% endif %}\n\n{% endfor %}",
+          "padding": [8, 10]
+        },
+      ]
+    },
+    {
+      "type": "vStack",
+      "borderColor": "#000000",
+      "borderWidth": 2,
+      "spacing": 0,
+      "views": [
+        {
+          "value": "Gear",
+          "style": "title4",
+          "padding": [6, 12],
+          "bgColor": "#000000",
+          "width": -1
+        },
+        {
+          "type": "text",
+          "value": "{% for item in data.items %}[{{item.name}}](item)\n\n{% endfor %}",
+          "padding": [8, 10]
+        },
+      ]
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    }
+  ]
+}

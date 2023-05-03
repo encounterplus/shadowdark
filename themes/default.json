@@ -1,0 +1,89 @@
+{
+  "tintColor": "#58180D",
+  "primaryColor": "#9C2B1B",
+  "textColor": "#000000",
+  "dividerColor": "#cccccc",
+  "bgColor": "#f5f5f5",
+  "bgImage": "/images/paper.png",
+  "styles": {
+    "body": {
+      "font": "Montserrat",
+      "size": 15,
+      "lineSpacing": 3,
+    },
+    "label": {
+      "font": "Montserrat",
+      "color": "#58180D",
+      "size": 15
+    },
+    "title": {
+      "font": "Montserrat Bold",
+      "color": "#000000",
+      "case": "uppercase",
+      "size": 22
+    },
+    "title2": {
+      "font": "Montserrat Bold",
+      "color": "#ffffff",
+      "case": "uppercase",
+      "alignment": "center",
+      "size": 22
+    },
+    "title3": {
+      "font": "OldNewspaperTypes",
+      "color": "#ffffff",
+      "alignment": "center",
+      "size": 36
+    },
+    "title4": {
+      "font": "OldNewspaperTypes",
+      "color": "#ffffff",
+      "case": "uppercase",
+      "size": 15
+    },
+    "subtitle": {
+      "font": "Montserrat Italic",
+      "size": 15
+    },
+    "heading": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "caps": true,
+    },
+    "heading1": {
+      "font": "HoeflerText-Regular",
+      "color": "#000000",
+      "caps": true,
+      "size": 28
+    },
+    "heading2": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "caps": true,
+      "size": 25,
+      "divider": true
+    },
+    "heading3": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "caps": true,
+      "size": 22
+    },
+    "heading4": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "caps": true,
+      "size": 20
+    },
+    "heading5": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "size": 18
+    },
+    "heading6": {
+      "font": "Montserrat",
+      "color": "#000000",
+      "size": 16
+    },
+  }
+}

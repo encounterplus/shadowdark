@@ -1,0 +1,14 @@
+{
+  "Alignment": {
+    "C": "Alignment.Chaotic",
+    "L": "Alignment.Lawful",
+    "N": "Alignment.Neutral"
+  },
+  "Language": {
+    "common": "Language.Common",
+    "dwarvish": "Language.Dwarvish",
+    "elvish": "Language.Elvish",
+    "giant": "Language.Giant",
+    "goblin": "Language.Goblin"
+  },
+}

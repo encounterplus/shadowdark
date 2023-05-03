@@ -1,0 +1,19 @@
+{
+  "sections": [
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Base",
+          "type": "number",
+          "attribute": "base",
+        },
+        {
+          "title": "Modifier",
+          "type": "number",
+          "attribute": "mod",
+        }, 
+      ]
+    }
+  ]
+}

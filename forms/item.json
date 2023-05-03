@@ -1,0 +1,59 @@
+{
+  "title": "Item",
+  "sections": [
+    {
+      "title": "Subtitle",
+      "type": "group",
+      "fields": [
+        {
+          "type": "textArea",
+          "attribute": "data.subtitle"
+        }
+      ]
+    },
+    {
+      "title": "Bonus",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Bonus",
+          "type": "textArea",
+          "attribute": "data.bonus"
+        }
+      ]
+    },
+    {
+      "title": "Benefit",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Benefit",
+          "type": "textArea",
+          "attribute": "data.benefit"
+        }
+      ]
+    },
+    {
+      "title": "Curse",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Curse",
+          "type": "textArea",
+          "attribute": "data.curse"
+        }
+      ]
+    },
+    {
+      "title": "Personality",
+      "type": "group",
+      "fields": [
+        {
+          "placeholder": "Personality",
+          "type": "textArea",
+          "attribute": "data.personality"
+        }
+      ]
+    },
+  ]
+}

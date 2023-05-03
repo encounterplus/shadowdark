@@ -1,0 +1,34 @@
+{
+  "debug": false,
+  "spacing": 12,
+  "padding": [0],
+  "footer": false,
+  "images": true,
+  "views": [
+    {
+      "value": "{{name}} Class",
+      "style": "title3",
+      "alignment": "center",
+      "width": 0,
+      "bgColor": "#000000",
+      "padding": [30, 20]
+    },
+    {
+      "type": "vStack",
+      "padding": [20],
+      "views": [
+        {
+          "value": "{{data.shortDescription}}",
+        },
+        {
+          "type": "text",
+          "value": "{{descr}}",
+        },
+        {
+          "type": "text",
+          "value": "{{data.weapons|prefix: '**Weapons:** '}}\n\n{{data.armor|prefix: '**Armor:** '}}\n\n{{data.hp|prefix: '**Hit Points:** '|suffix: ' per level'}}\n\n{% for feature in data.features %}**{{feature.name}}.** {{feature.text}}\n\n{% endfor %}",
+        },
+      ]
+    }
+  ]
+}

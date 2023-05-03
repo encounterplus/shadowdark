@@ -1,0 +1,347 @@
+{
+  "title": "Hero",
+  "sections": [
+    {
+      "title": "Stats",
+      "type": "group",
+      "fields": [
+        {
+          "title": "STR",
+          "type": "form",
+          "text": "{{data.str.base}} ( {{data.str.mod|signed}} )",
+          "attribute": "data.str",
+          "form": {
+            "title": "STR",
+            "partial": "ability"
+          }
+        },
+        {
+          "title": "DEX",
+          "type": "form",
+          "text": "{{data.dex.base}} ( {{data.dex.mod|signed}} )",
+          "attribute": "data.dex",
+          "form": {
+            "title": "DEX",
+            "partial": "ability"
+          }
+        },
+        {
+          "title": "CON",
+          "type": "form",
+          "text": "{{data.con.base}} ( {{data.con.mod|signed}} )",
+          "attribute": "data.con",
+          "form": {
+            "title": "CON",
+            "partial": "ability"
+          }
+        },
+        {
+          "title": "INT",
+          "type": "form",
+          "text": "{{data.int.base}} ( {{data.int.mod|signed}} )",
+          "attribute": "data.int",
+          "form": {
+            "title": "INT",
+            "partial": "ability"
+          }
+        },
+        {
+          "title": "WIS",
+          "type": "form",
+          "text": "{{data.wis.base}} ( {{data.wis.mod|signed}} )",
+          "attribute": "data.wis",
+          "form": {
+            "title": "WIS",
+            "partial": "ability"
+          }
+        },
+        {
+          "title": "CHA",
+          "type": "form",
+          "text": "{{data.cha.base}} ( {{data.cha.mod|signed}} )",
+          "attribute": "data.cha",
+          "form": {
+            "title": "CHA",
+            "partial": "ability"
+          }
+        },
+      ]
+    },
+    {
+      "title": "Health",
+      "type": "group",
+      "fields": [
+        {
+          "title": "Current HP",
+          "type": "number",
+          "attribute": "data.hpCurrent"
+        },
+        {
+          "title": "Maximum HP",
+          "type": "number",
+          "attribute": "data.hpMaximum"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "AC",
+          "type": "number",
+          "attribute": "data.ac"
+        },
+        {
+          "title": "Experience",
+          "type": "number",
+          "attribute": "data.xp"
+        },
+        {
+          "title": "Level",
+          "type": "number",
+          "attribute": "data.level"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Ancestry",
+          "type": "picker",
+          "attribute": "data.ancestry",
+          "attributeType": "Ancestry"
+        },
+        {
+          "title": "Class",
+          "type": "picker",
+          "attribute": "data.class",
+          "attributeType": "Class"
+        },
+        {
+          "title": "Title",
+          "type": "text",
+          "attribute": "data.title"
+        },
+        {
+          "title": "Alignment",
+          "type": "picker",
+          "attribute": "data.alignment",
+          "attributeType": "Alignment"
+        },
+        {
+          "title": "Background",
+          "type": "text",
+          "attribute": "data.background"
+        },
+        {
+          "title": "Deity",
+          "type": "text",
+          "attribute": "data.deity"
+        },
+      ]
+    },
+    {
+      "title": "Attacks",
+      "type": "list",
+      "attribute": "data.attacks",
+      "form": {
+        "title": "Attack",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+            ]
+          },
+          {
+            "title": "Attack",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Attack",
+                "type": "textArea",
+                "attribute": "attack"
+              },
+            ]
+          },
+          {
+            "title": "Damage",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Damage",
+                "type": "textArea",
+                "attribute": "damage"
+              }
+            ]
+          },
+          {
+            "title": "Other",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Other",
+                "type": "textArea",
+                "attribute": "other"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Talents",
+      "type": "list",
+      "attribute": "data.talents",
+      "form": {
+        "title": "Talent",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+              {
+                "placeholder": "Description",
+                "type": "textArea",
+                "attribute": "descr"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Spells",
+      "type": "list",
+      "attribute": "data.spells",
+      "attributeType": "Spell",
+      "form": {
+        "title": "Spell",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+              
+              {
+                "placeholder": "Description",
+                "type": "textArea",
+                "attribute": "descr"
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "fields": [
+              {
+                "title": "Expended",
+                "type": "toggle",
+                "attribute": "expended"
+              },
+            ]
+          },
+          {
+            "title": "Reference",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Reference",
+                "type": "reference",
+                "attribute": "reference",
+                "attributeType": "Spell"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "group",
+      "title": "Wealth",
+      "fields": [
+        {
+          "title": "Gold",
+          "type": "number",
+          "attribute": "data.gp"
+        },
+        {
+          "title": "Silver",
+          "type": "number",
+          "attribute": "data.sp"
+        },
+        {
+          "title": "Copper",
+          "type": "number",
+          "attribute": "data.cp"
+        }
+      ]
+    },
+    {
+      "title": "Equipment",
+      "type": "list",
+      "attribute": "data.items",
+      "attributeType": "Item",
+      "form": {
+        "title": "Item",
+        "sections": [
+          {
+            "type": "group",
+            "fields": [
+              {
+                "placeholder": "Name",
+                "attribute": "name"
+              },
+              {
+                "placeholder": "Description",
+                "type": "textArea",
+                "attribute": "descr"
+              },
+            ]
+          },
+          {
+            "type": "group",
+            "fields": [
+              {
+                "title": "Quantity",
+                "type": "number",
+                "attribute": "quantity"
+              },
+              {
+                "title": "Free to Carry",
+                "type": "toggle",
+                "attribute": "free"
+              }, 
+              {
+                "title": "Active",
+                "type": "toggle",
+                "attribute": "active"
+              },
+            ]
+          },
+          {
+            "title": "Reference",
+            "type": "group",
+            "fields": [
+              {
+                "title": "Reference",
+                "type": "reference",
+                "attribute": "reference",
+                "attributeType": "Item"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

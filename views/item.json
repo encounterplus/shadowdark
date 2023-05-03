@@ -1,0 +1,34 @@
+{
+  "debug": false,
+  "spacing": 12,
+  "padding": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "footer": true,
+  "images": true,
+  "views": [
+    {
+      "value": "{{name}}",
+      "style": "title2",
+      "alignment": "center",
+      "width": 0,
+      "bgColor": "#000000",
+      "padding": [6]
+    },
+    {
+      "value": "{{data.subtitle}}",
+      "style": "subtitle",
+    },
+    {
+      "type": "text",
+      "value": "{{data.bonus|prefix: '**Bonus**. '}}\n\n{{data.benefit|prefix: '**Benefit**. '}}\n\n{{data.curse|prefix: '**Curse**. '}}\n\n{{data.personality|prefix: '**Personality**. '}}\n",
+    },
+    {
+      "type": "text",
+      "value": "{{descr}}",
+    }
+  ]
+}
