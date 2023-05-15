@@ -8,26 +8,26 @@
   "styles": {
     "body": {
       "font": "Montserrat",
-      "size": 15,
+      "size": 16,
       "lineSpacing": 3,
     },
     "label": {
       "font": "Montserrat",
       "color": "#58180D",
-      "size": 15
+      "size": 16
     },
     "title": {
       "font": "Montserrat Bold",
       "color": "#000000",
       "case": "uppercase",
-      "size": 22
+      "size": 23
     },
     "title2": {
       "font": "Montserrat Bold",
       "color": "#ffffff",
       "case": "uppercase",
       "alignment": "center",
-      "size": 22
+      "size": 23
     },
     "title3": {
       "font": "OldNewspaperTypes",
@@ -39,11 +39,17 @@
       "font": "OldNewspaperTypes",
       "color": "#ffffff",
       "case": "uppercase",
-      "size": 15
+      "size": 16
+    },
+    "title5": {
+      "font": "OldNewspaperTypes",
+      "color": "#000000",
+      "case": "uppercase",
+      "size": 16
     },
     "subtitle": {
       "font": "Montserrat Italic",
-      "size": 15
+      "size": 16
     },
     "heading": {
       "font": "Montserrat",
@@ -60,20 +66,20 @@
       "font": "Montserrat",
       "color": "#000000",
       "caps": true,
-      "size": 25,
+      "size": 26,
       "divider": true
     },
     "heading3": {
       "font": "Montserrat",
       "color": "#000000",
       "caps": true,
-      "size": 22
+      "size": 23
     },
     "heading4": {
       "font": "Montserrat",
       "color": "#000000",
       "caps": true,
-      "size": 20
+      "size": 21
     },
     "heading5": {
       "font": "Montserrat",

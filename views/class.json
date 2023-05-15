@@ -19,6 +19,7 @@
       "views": [
         {
           "value": "{{data.shortDescription}}",
+          "style": "subtitle"
         },
         {
           "type": "text",

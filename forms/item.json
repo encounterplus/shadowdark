@@ -2,12 +2,12 @@
   "title": "Item",
   "sections": [
     {
-      "title": "Subtitle",
+      "title": "Short Description",
       "type": "group",
       "fields": [
         {
           "type": "textArea",
-          "attribute": "data.subtitle"
+          "attribute": "data.shortDescription"
         }
       ]
     },

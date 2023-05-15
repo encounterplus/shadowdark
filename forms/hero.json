@@ -8,7 +8,7 @@
         {
           "title": "STR",
           "type": "form",
-          "text": "{{data.str.base}} ( {{data.str.mod|signed}} )",
+          "text": "{{data.str.base}} ({{data.str.mod|signed}})",
           "attribute": "data.str",
           "form": {
             "title": "STR",
@@ -18,7 +18,7 @@
         {
           "title": "DEX",
           "type": "form",
-          "text": "{{data.dex.base}} ( {{data.dex.mod|signed}} )",
+          "text": "{{data.dex.base}} ({{data.dex.mod|signed}})",
           "attribute": "data.dex",
           "form": {
             "title": "DEX",
@@ -28,7 +28,7 @@
         {
           "title": "CON",
           "type": "form",
-          "text": "{{data.con.base}} ( {{data.con.mod|signed}} )",
+          "text": "{{data.con.base}} ({{data.con.mod|signed}})",
           "attribute": "data.con",
           "form": {
             "title": "CON",
@@ -38,7 +38,7 @@
         {
           "title": "INT",
           "type": "form",
-          "text": "{{data.int.base}} ( {{data.int.mod|signed}} )",
+          "text": "{{data.int.base}} ({{data.int.mod|signed}})",
           "attribute": "data.int",
           "form": {
             "title": "INT",
@@ -48,7 +48,7 @@
         {
           "title": "WIS",
           "type": "form",
-          "text": "{{data.wis.base}} ( {{data.wis.mod|signed}} )",
+          "text": "{{data.wis.base}} ({{data.wis.mod|signed}})",
           "attribute": "data.wis",
           "form": {
             "title": "WIS",
@@ -58,7 +58,7 @@
         {
           "title": "CHA",
           "type": "form",
-          "text": "{{data.cha.base}} ( {{data.cha.mod|signed}} )",
+          "text": "{{data.cha.base}} ({{data.cha.mod|signed}})",
           "attribute": "data.cha",
           "form": {
             "title": "CHA",

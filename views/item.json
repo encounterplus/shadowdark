@@ -19,7 +19,7 @@
       "padding": [6]
     },
     {
-      "value": "{{data.subtitle}}",
+      "value": "{{data.shortDescription}}",
       "style": "subtitle",
     },
     {
