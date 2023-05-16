@@ -20,6 +20,7 @@
     },
     {
       "value": "{{data.shortDescription}}",
+      "type": "text",
       "style": "subtitle"
     },
     {

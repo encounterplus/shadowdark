@@ -2,7 +2,7 @@
   "id": "shadowdark",
   "name": "Shadowdark",
   "type": "system",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Shadowdark RPG is a fantasy adventure game where you and your companions delve into buried ruins, lost cities, spider-infested forests, and even fearsome dragon lairs in search of gold and glory.",
-  "download": "https://github.com/encounterplus/shadowdark/releases/download/0.9.1/shadowdark.system"
+  "download": "https://github.com/encounterplus/shadowdark/releases/download/0.9.2/shadowdark.system"
 }
