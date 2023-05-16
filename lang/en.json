@@ -11,6 +11,8 @@
   "Entity.Class.many": "Classes",
   "Entity.Ancestry": "Ancestry",
   "Entity.Ancestry.many": "Ancestries",
+  "Entity.Table": "Table",
+  "Entity.Table.many": "Tables",
   "MonsterType.Beast": "Beast",
   "MonsterType.Dragon": "Dragon",
   "MonsterType.Humanoid": "Humanoid",
@@ -22,5 +24,8 @@
   "ItemType.Armor": "Armor",
   "ItemType.Weapon": "Weapon",
   "ItemType.Potion": "Potion",
-  "ItemType.Scroll": "Scroll"
+  "ItemType.Scroll": "Scroll",
+  "Alignment.Chaotic": "Chaotic",
+  "Alignment.Lawful": "Lawful",
+  "Alignment.Neutral": "Neutral"
 }
