@@ -4,6 +4,28 @@
     "L": "Alignment.Lawful",
     "N": "Alignment.Neutral"
   },
+  "Range": {
+    "C": "Range.Close",
+    "N": "Range.Near",
+    "F": "Range.Far"
+  },
+  "ItemType": {
+    "basic": "ItemType.BasicGear",
+    "armor": "ItemType.Armor",
+    "weapon": "ItemType.Weapon",
+    "magic": "ItemType.MagicItem"
+  },
+  "WeaponType": {
+    "M": "WeaponType.Meelee",
+    "R": "WeaponType.Ranged"
+  },
+  "WeaponProperty": {
+    "F": "WeaponProperty.Finesse",
+    "L": "WeaponProperty.Loading",
+    "Th": "WeaponProperty.Thrown",
+    "2H": "WeaponProperty.TwoHanded",
+    "V": "WeaponProperty.Versatile"
+  },
   "Language": {
     "common": "Language.Common",
     "dwarvish": "Language.Dwarvish",

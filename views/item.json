@@ -20,11 +20,12 @@
     },
     {
       "value": "{{data.shortDescription}}",
+      "type": "text",
       "style": "subtitle",
     },
     {
       "type": "text",
-      "value": "{{data.bonus|prefix: '**Bonus**. '}}\n\n{{data.benefit|prefix: '**Benefit**. '}}\n\n{{data.curse|prefix: '**Curse**. '}}\n\n{{data.personality|prefix: '**Personality**. '}}\n",
+      "value": "{% include \"item.md\" %}",
     },
     {
       "type": "text",

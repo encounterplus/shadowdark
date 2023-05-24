@@ -12,8 +12,82 @@
       ]
     },
     {
+      "title": "Basic Gear",
+      "type": "group",
+      "visibleIf": "{{type == 'basic'}}",
+      "fields": [
+        {
+          "title": "Cost",
+          "attribute": "data.cost"
+        },
+        {
+          "title": "Quantity Per Gear Slot",
+          "attribute": "data.quantityPerGearSlot"
+        }
+      ]
+    },
+    {
+      "title": "Weapon",
+      "type": "group",
+      "visibleIf": "{{type == 'weapon'}}",
+      "fields": [
+        {
+          "title": "Cost",
+          "attribute": "data.cost"
+        },
+        {
+          "title": "Type",
+          "type": "multiPicker",
+          "attribute": "data.type",
+          "attributeType": "WeaponType"
+        },
+        {
+          "title": "Range",
+          "type": "multiPicker",
+          "attribute": "data.range",
+          "attributeType": "Range"
+        },
+        {
+          "title": "Damage",
+          "attribute": "data.damage",
+        },
+        {
+          "title": "Properties",
+          "type": "multiPicker",
+          "attribute": "data.properties",
+          "attributeType": "WeaponProperty"
+        }
+      ]
+    },
+    {
+      "title": "Armor",
+      "type": "group",
+      "visibleIf": "{{type == 'armor'}}",
+      "fields": [
+        {
+          "title": "Cost",
+          "attribute": "data.cost"
+        },
+        {
+          "title": "Gear Slots",
+          "type": "number",
+          "attribute": "data.gearSlots"
+        },
+        {
+          "title": "AC",
+          "attribute": "data.ac"
+        },
+        {
+          "title": "Properties",
+          "type": "list",
+          "attribute": "data.properties"
+        }
+      ]
+    },
+    {
       "title": "Bonus",
       "type": "group",
+      "visibleIf": "{{type == 'magic'}}",
       "fields": [
         {
           "placeholder": "Bonus",
@@ -25,6 +99,7 @@
     {
       "title": "Benefit",
       "type": "group",
+      "visibleIf": "{{type == 'magic'}}",
       "fields": [
         {
           "placeholder": "Benefit",
@@ -36,6 +111,7 @@
     {
       "title": "Curse",
       "type": "group",
+      "visibleIf": "{{type == 'magic'}}",
       "fields": [
         {
           "placeholder": "Curse",
@@ -47,6 +123,7 @@
     {
       "title": "Personality",
       "type": "group",
+      "visibleIf": "{{type == 'magic'}}",
       "fields": [
         {
           "placeholder": "Personality",

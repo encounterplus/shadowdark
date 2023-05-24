@@ -1,0 +1,13 @@
+{
+  "ItemType": [
+    "basic",
+    "armor",
+    "weapon",
+    "magic"
+  ],
+  "Range": [
+    "C",
+    "N",
+    "F"
+  ],
+}

@@ -1,2 +1,28 @@
 [
+    {
+        "entity": "Item",
+        "params": [
+          {
+            "attribute": "type",
+            "attributeType": "ItemType",
+            "title": "Item.Type"
+          },
+          {
+            "attribute": "source",
+            "title": "Item.Source",
+            "dynamic": true
+          }
+        ],
+        "group": [
+          {
+            "attribute": "type",
+            "attributeType": "ItemType",
+            "title": "Item.Type"
+          },
+          {
+            "attribute": "title",
+            "title": "Item.Name"
+          }
+        ]
+      }
 ]

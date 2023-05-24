@@ -5,16 +5,32 @@
   "dividerColor": "#cccccc",
   "bgColor": "#f5f5f5",
   "bgImage": "/images/paper.png",
+  "table": {
+    "rowStyle": "underline",
+    "rowColor": "#000000",
+  },
+  "blockQuote": {
+    "padding": [16],
+    "bgColor": "#222222",
+    "body": {
+      "font": "OldNewspaperTypes",
+      "alignment": "center",
+      "color": "#ffffff",
+      "size": 18,
+      "lineSpacing": 4
+    }
+  },
   "styles": {
     "body": {
       "font": "Montserrat",
       "size": 16,
-      "lineSpacing": 3,
+      "lineSpacing": 3
     },
     "label": {
       "font": "Montserrat",
       "color": "#58180D",
-      "size": 16
+      "size": 16,
+      "lineSpacing": 3
     },
     "title": {
       "font": "Montserrat Bold",
@@ -49,7 +65,8 @@
     },
     "subtitle": {
       "font": "Montserrat Italic",
-      "size": 16
+      "size": 16,
+      "lineSpacing": 3
     },
     "heading": {
       "font": "Montserrat",
@@ -90,6 +107,6 @@
       "font": "Montserrat",
       "color": "#000000",
       "size": 16
-    },
+    }
   }
 }

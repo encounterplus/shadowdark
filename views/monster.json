@@ -25,7 +25,7 @@
     },
     {
       "type": "text",
-      "value": "{% include \"monster-stats.md\" %}",
+      "value": "{% include \"monster.md\" %}",
     },
     {
       "type": "text",
