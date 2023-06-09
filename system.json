@@ -4,10 +4,10 @@
   "descr" : "Shadowdark RPG is a fantasy adventure game where you and your companions delve into buried ruins, lost cities, spider-infested forests, and even fearsome dragon lairs in search of gold and glory.",
   "id" : "shadowdark",
   "name" : "Shadowdark",
-  "shortDescr" : "Speed, danger, and simplicity.",
-  "shortName" : "Shadowdark",
-  "version" : "0.9.3",
-  "website" : "https:\/\/www.thearcanelibrary.com\/pages\/shadowdark",
   "package" : "https:\/\/github.com\/encounterplus\/shadowdark\/releases\/latest\/download\/manifest.json",
   "repository" : "https:\/\/github.com\/encounterplus\/shadowdark",
+  "shortDescr" : "Speed, danger, and simplicity.",
+  "shortName" : "Shadowdark",
+  "version" : "0.9.4",
+  "website" : "https:\/\/www.thearcanelibrary.com\/pages\/shadowdark"
 }

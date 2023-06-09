@@ -71,31 +71,30 @@
     "heading": {
       "font": "Montserrat",
       "color": "#000000",
-      "caps": true,
     },
     "heading1": {
-      "font": "HoeflerText-Regular",
+      "font": "Montserrat Bold",
       "color": "#000000",
-      "caps": true,
-      "size": 28
-    },
-    "heading2": {
-      "font": "Montserrat",
-      "color": "#000000",
-      "caps": true,
-      "size": 26,
+      "size": 28,
       "divider": true
     },
-    "heading3": {
-      "font": "Montserrat",
+    "heading2": {
+      "font": "Montserrat Bold",
       "color": "#000000",
-      "caps": true,
+      "size": 25,
+    },
+    "heading3": {
+      "font": "Montserrat Bold",
+      "color": "#ffffff",
+      "case": "uppercase",
+      "alignment": "center",
+      "bgColor": "#000000",
+      "lineHeight": 40,
       "size": 23
     },
     "heading4": {
-      "font": "Montserrat",
+      "font": "Montserrat Bold",
       "color": "#000000",
-      "caps": true,
       "size": 21
     },
     "heading5": {

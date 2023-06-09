@@ -36,6 +36,11 @@
           "attribute": "data.cost"
         },
         {
+          "title": "Gear Slots",
+          "type": "number",
+          "attribute": "data.gearSlots"
+        },
+        {
           "title": "Type",
           "type": "multiPicker",
           "attribute": "data.type",
