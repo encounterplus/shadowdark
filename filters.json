@@ -1,28 +1,106 @@
-[
-    {
-        "entity": "Item",
-        "params": [
-          {
-            "attribute": "type",
-            "attributeType": "ItemType",
-            "title": "Item.Type"
-          },
-          {
-            "attribute": "source",
-            "title": "Item.Source",
-            "dynamic": true
-          }
-        ],
-        "group": [
-          {
-            "attribute": "type",
-            "attributeType": "ItemType",
-            "title": "Item.Type"
-          },
-          {
-            "attribute": "title",
-            "title": "Item.Name"
-          }
-        ]
+{
+  "Monster": {
+    "params": [
+      {
+        "attribute": "data.level",
+        "title": "Level",
+        "dynamic": true
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
       }
-]
+    ],
+    "group": [
+      {
+        "attribute": "data.level",
+        "text": "{{value|ordinal}} Level",
+        "title": "Level"
+      },
+      {
+        "attribute": "name",
+        "title": "Name"
+      }
+    ],
+    "sort": [
+      {
+        "attribute": "name",
+        "title": "Common.Name"
+      },
+      {
+        "attribute": "data.level",
+        "title": "Level",
+      }
+    ]
+  },
+  "Spell": {
+    "params": [
+      {
+        "attribute": "data.tier",
+        "title": "Tier",
+        "dynamic": true
+      },
+      {
+        "attribute": "data.classes",
+        "title": "Class",
+        "dynamic": true
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "data.tier",
+        "text": "{{value|ordinal}} Tier",
+        "title": "Tier"
+      },
+      {
+        "attribute": "source",
+        "title": "Source"
+      },
+      {
+        "attribute": "name",
+        "title": "Name"
+      }
+    ],
+    "sort": [
+      {
+        "attribute": "name",
+        "title": "Name"
+      },
+      {
+        "attribute": "data.level",
+        "title": "Level"
+      }
+    ]
+  },
+  "Item": {
+    "params": [
+      {
+        "attribute": "data.category",
+        "attributeType": "ItemType",
+        "title": "Category"
+      },
+      {
+        "attribute": "source",
+        "title": "Source",
+        "dynamic": true
+      }
+    ],
+    "group": [
+      {
+        "attribute": "data.category",
+        "attributeType": "ItemType",
+        "title": "Category"
+      },
+      {
+        "attribute": "name",
+        "title": "Name"
+      }
+    ]
+  },
+}

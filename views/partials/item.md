@@ -1,10 +1,10 @@
-{% if type == 'basic' %}
+{% if data.category == 'basic' %}
 
 {{data.cost|prefix: '**Cost:** '}}
 
 {{data.quantityPerGearSlot|prefix: '**Quantity Per Gear Slot:** '}}
 
-{% elif type == 'armor' %}
+{% elif data.category == 'armor' %}
 
 {{data.cost|prefix: '**Cost:** '}}
 
@@ -14,11 +14,11 @@
 
 {{data.properties|join: ', '|prefix: '**Properties:** '}}
 
-{% elif type == 'weapon' %}
+{% elif data.category == 'weapon' %}
 
 {{data.cost|prefix: '**Cost:** '}}
 
-{{data.type|map: 'WeaponType'| prefix: '**Type:** '}}
+{{data.weaponType|map: 'WeaponType'| prefix: '**Type:** '}}
 
 {{data.range|map: 'Range'| prefix: '**Range:** '}}
 
@@ -26,7 +26,7 @@
 
 {{data.properties|map: 'WeaponProperty'| prefix: '**Properties:** '}}
 
-{% elif type == 'magic' %}
+{% elif data.category == 'magic' %}
 
 {{data.bonus|prefix: '**Bonus.** '}}
 

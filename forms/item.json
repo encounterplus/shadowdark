@@ -2,6 +2,17 @@
   "title": "Item",
   "sections": [
     {
+      "type": "group",
+      "fields": [
+        {
+          "title": "Category",
+          "type": "picker",
+          "attribute": "data.category",
+          "attributeType": "ItemType"
+        },
+      ]
+    },
+    {
       "title": "Short Description",
       "type": "group",
       "fields": [
@@ -14,7 +25,7 @@
     {
       "title": "Basic Gear",
       "type": "group",
-      "visibleIf": "{{type == 'basic'}}",
+      "visibleIf": "{{data.category == 'basic'}}",
       "fields": [
         {
           "title": "Cost",
@@ -29,7 +40,7 @@
     {
       "title": "Weapon",
       "type": "group",
-      "visibleIf": "{{type == 'weapon'}}",
+      "visibleIf": "{{data.category == 'weapon'}}",
       "fields": [
         {
           "title": "Cost",
@@ -43,7 +54,7 @@
         {
           "title": "Type",
           "type": "multiPicker",
-          "attribute": "data.type",
+          "attribute": "data.weaponType",
           "attributeType": "WeaponType"
         },
         {
@@ -67,7 +78,7 @@
     {
       "title": "Armor",
       "type": "group",
-      "visibleIf": "{{type == 'armor'}}",
+      "visibleIf": "{{data.category == 'armor'}}",
       "fields": [
         {
           "title": "Cost",
@@ -92,7 +103,7 @@
     {
       "title": "Bonus",
       "type": "group",
-      "visibleIf": "{{type == 'magic'}}",
+      "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
           "placeholder": "Bonus",
@@ -104,7 +115,7 @@
     {
       "title": "Benefit",
       "type": "group",
-      "visibleIf": "{{type == 'magic'}}",
+      "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
           "placeholder": "Benefit",
@@ -116,7 +127,7 @@
     {
       "title": "Curse",
       "type": "group",
-      "visibleIf": "{{type == 'magic'}}",
+      "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
           "placeholder": "Curse",
@@ -128,7 +139,7 @@
     {
       "title": "Personality",
       "type": "group",
-      "visibleIf": "{{type == 'magic'}}",
+      "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
           "placeholder": "Personality",

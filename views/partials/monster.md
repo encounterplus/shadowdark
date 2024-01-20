@@ -1,4 +1,4 @@
-{{data.ac | md-prefix: "AC"}}{{data.hp | prefix: "**HP** "}}
+{{data.ac | prefix: "**AC** "}} {{data.hp | prefix: "**HP** "}}
 {{data.attacks | prefix: "**ATK** "}}
-**S** {{data.str|signed|default: '+0'}}, **D** {{data.dex|signed|default: '+0'}}, **C** {{data.con|signed|default: '+0'}}, **I** {{data.int|signed|default: '+0'}}, **W** {{data.wis|signed|default: '+0'}}, **CH** {{data.cha|signed|default: '+0'}}
-{{data.movement | md-prefix: "MV"}}{{data.alignment | md-prefix: "AL"}}{{data.level | md-prefix: "LV"}}
+**S** {{data.str|default: 0|signed|roll: 'Strength'}}, **D** {{data.dex|default: 0|signed|roll: 'Dexterity'}}, **C** {{data.con|default: 0|signed|roll: 'Constitution'}}, **I** {{data.int|default: 0|signed|roll: 'Intelligence'}}, **W** {{data.wis|default: 0|signed|roll: 'Wisdom'}}, **CH** {{data.cha|default: 0|signed|roll: 'Charisma'}}
+{{data.movement | prefix: "**MV** "}} {{data.alignment | prefix: "**AL** "}} {{data.level | prefix: "**LV** "}}

@@ -35,5 +35,11 @@
       "type": "text",
       "value": "{{descr}}",
     }
+  ],
+  "attributes": [
+    {
+      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+    }
   ]
 }

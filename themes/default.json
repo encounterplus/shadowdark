@@ -1,26 +1,43 @@
 {
-  "tintColor": "#58180D",
+  "tintColor": "#000000",
   "primaryColor": "#9C2B1B",
   "textColor": "#000000",
   "dividerColor": "#cccccc",
   "bgColor": "#f5f5f5",
   "bgImage": "/images/paper.png",
-  "table": {
-    "rowStyle": "underline",
-    "rowColor": "#000000",
-  },
-  "blockQuote": {
-    "padding": [16],
-    "bgColor": "#222222",
-    "body": {
-      "font": "OldNewspaperTypes",
-      "alignment": "center",
-      "color": "#ffffff",
-      "size": 18,
-      "lineSpacing": 4
+  "tableStyles": {
+    "default": {
+      "rowStyle": "underline",
+      "rowColor": "#000000",
     }
   },
-  "styles": {
+  "blockQuoteStyles": {
+    "default": {
+      "padding": [16],
+      "bgColor": "#222222",
+      "body": {
+        "font": "OldNewspaperTypes",
+        "alignment": "center",
+        "color": "#ffffff",
+        "size": 18,
+        "lineSpacing": 4
+      }
+    }
+  },
+  "buttonStyles": {
+    "default": {
+      "color": "#ffffff",
+      "bgColor": "#222222",
+      "cornerRadius": 3,
+      "body": {
+        "font": "OldNewspaperTypes",
+        "color": "#000000",
+        "case": "uppercase",
+        "size": 16
+      }
+    }
+  },
+  "textStyles": {
     "body": {
       "font": "Montserrat",
       "size": 16,
