@@ -2,27 +2,27 @@
   "title": "Spell",
   "sections": [
     {
-      "title": "Attributes",
+      "title": "Common.Attributes",
       "type": "group",
       "fields": [
         {
-          "title": "Tier",
+          "title": "Spell.Tier",
           "type": "number",
           "attribute": "data.tier"
         }, 
         {
-          "title": "Classes",
+          "title": "Spell.Classes",
           "type": "tags",
           "attribute": "data.classes",
           "attributeType": "Class"
         },
         {
-          "title": "Duration",
+          "title": "Spell.Duration",
           "type": "text",
           "attribute": "data.duration"
         },
         {
-          "title": "Range",
+          "title": "Spell.Range",
           "type": "text",
           "attribute": "data.range"
         },

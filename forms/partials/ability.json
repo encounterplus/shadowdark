@@ -4,12 +4,12 @@
       "type": "group",
       "fields": [
         {
-          "title": "Base",
+          "title": "Common.Base",
           "type": "number",
           "attribute": "base",
         },
         {
-          "title": "Modifier",
+          "title": "Common.Modifier",
           "type": "number",
           "attribute": "mod",
         }, 

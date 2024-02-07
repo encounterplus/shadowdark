@@ -2,7 +2,7 @@
   "title": "Class",
   "sections": [
     {
-      "title": "Short Description",
+      "title": "Common.ShortDescription",
       "type": "group",
       "fields": [
         {
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "title": "Weapons",
+      "title": "Class.Weapons",
       "type": "group",
       "fields": [
         {
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "title": "Armor",
+      "title": "Class.Armor",
       "type": "group",
       "fields": [
         {
@@ -32,32 +32,32 @@
       ]
     },
     {
-      "title": "Hit Points per Level",
+      "title": "Class.HitPointsPerLevel",
       "type": "group",
       "fields": [
         {
-          "title": "Hit Points",
+          "title": "Common.HitPoints",
           "type": "text",
           "attribute": "data.hp"
         }
       ]
     },
     {
-      "title": "Features",
+      "title": "Class.Features",
       "type": "list",
       "attribute": "data.features",
       "form": {
-        "title": "Feature",
+        "title": "Class.Feature",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
               {
-                "title": "Text",
+                "title": "Common.Text",
                 "type": "textArea",
                 "attribute": "text"
               }

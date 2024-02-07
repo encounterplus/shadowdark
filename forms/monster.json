@@ -2,7 +2,7 @@
   "title": "Monster",
   "sections": [
     {
-      "title": "Short Description",
+      "title": "Common.ShortDescription",
       "type": "group",
       "fields": [
         {
@@ -12,100 +12,100 @@
       ]
     },
     {
-      "title": "Attributes",
+      "title": "Common.Attributes",
       "type": "group",
       "fields": [
         {
-          "title": "Armor Class",
+          "title": "Common.ArmorClass",
           "type": "number",
           "attribute": "data.ac"
         }, 
         {
-          "title": "Hit Points",
-          "type": "number",
+          "title": "Common.HitPoints",
+          "type": "text",
           "attribute": "data.hp"
         },
         {
-          "title": "Movement",
+          "title": "Common.Movement",
           "type": "text",
           "attribute": "data.movement"
         },
         {
-          "title": "Alignment",
+          "title": "Common.Alignment",
           "type": "picker",
           "attribute": "data.alignment",
           "attributeType": "Alignment"
         },
         {
-          "title": "Level",
+          "title": "Common.Level",
           "type": "number",
           "attribute": "data.level"
         },
       ]
     },
     {
-      "title": "Attacks",
+      "title": "Monster.Attacks",
       "type": "group",
       "fields": [
         {
-          "placeholder": "Attacks detail",
+          "placeholder": "Monster.AttacksDetail",
           "type": "textArea",
           "attribute": "data.attacks"
         }
       ]
     },
     {
-      "title": "Stat Modifiers",
+      "title": "Monster.StatModifiers",
       "type": "group",
       "fields": [
         {
-          "title": "Strength",
+          "title": "Stat.Strength",
           "type": "number",
           "attribute": "data.str"
         },
         {
-          "title": "Dexterity",
+          "title": "Stat.Dexterity",
           "type": "number",
           "attribute": "data.dex"
         },
         {
-          "title": "Constitution",
+          "title": "Stat.Constitution",
           "type": "number",
           "attribute": "data.con"
         },
         {
-          "title": "Intelligence",
+          "title": "Stat.Intelligence",
           "type": "number",
           "attribute": "data.int"
         },
         {
-          "title": "Wisdom",
+          "title": "Stat.Wisdom",
           "type": "number",
           "attribute": "data.wis"
         },
         {
-          "title": "Charisma",
+          "title": "Stat.Charisma",
           "type": "number",
           "attribute": "data.cha"
         },
       ]
     },
     {
-      "title": "Actions",
+      "title": "Monster.Actions",
       "type": "list",
       "attribute": "data.actions",
       "form": {
-        "title": "Action",
+        "title": "Monster.Action",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
               {
-                "title": "Text",
+                "title": "Common.Text",
                 "type": "textArea",
                 "attribute": "text"
               }

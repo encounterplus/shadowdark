@@ -8,6 +8,16 @@
     "loadable": true
   },
   {
+    "name": "NPC",
+    "label": "npc",
+    "extends": "Monster",
+    "collection": {
+      "label": "npcs"
+    },
+    "loadable": true,
+    "role": "neutral"
+  },
+  {
     "name": "Spell",
     "label": "spell",
     "collection": {

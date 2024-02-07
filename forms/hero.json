@@ -6,78 +6,78 @@
       "type": "group",
       "fields": [
         {
-          "title": "STR",
+          "title": "Stat.STR",
           "type": "form",
           "text": "{{data.str.base}} ({{data.str.mod|signed}})",
           "attribute": "data.str",
           "form": {
-            "title": "STR",
+            "title": "Stat.STR",
             "partial": "ability"
           }
         },
         {
-          "title": "DEX",
+          "title": "Stat.DEX",
           "type": "form",
           "text": "{{data.dex.base}} ({{data.dex.mod|signed}})",
           "attribute": "data.dex",
           "form": {
-            "title": "DEX",
+            "title": "Stat.DEX",
             "partial": "ability"
           }
         },
         {
-          "title": "CON",
+          "title": "Stat.CON",
           "type": "form",
           "text": "{{data.con.base}} ({{data.con.mod|signed}})",
           "attribute": "data.con",
           "form": {
-            "title": "CON",
+            "title": "Stat.CON",
             "partial": "ability"
           }
         },
         {
-          "title": "INT",
+          "title": "Stat.INT",
           "type": "form",
           "text": "{{data.int.base}} ({{data.int.mod|signed}})",
           "attribute": "data.int",
           "form": {
-            "title": "INT",
+            "title": "Stat.INT",
             "partial": "ability"
           }
         },
         {
-          "title": "WIS",
+          "title": "Stat.WIS",
           "type": "form",
           "text": "{{data.wis.base}} ({{data.wis.mod|signed}})",
           "attribute": "data.wis",
           "form": {
-            "title": "WIS",
+            "title": "Stat.WIS",
             "partial": "ability"
           }
         },
         {
-          "title": "CHA",
+          "title": "Stat.CHA",
           "type": "form",
           "text": "{{data.cha.base}} ({{data.cha.mod|signed}})",
           "attribute": "data.cha",
           "form": {
-            "title": "CHA",
+            "title": "Stat.CHA",
             "partial": "ability"
           }
         },
       ]
     },
     {
-      "title": "Health",
+      "title": "Common.Health",
       "type": "group",
       "fields": [
         {
-          "title": "Current HP",
+          "title": "Common.CurrentHP",
           "type": "number",
           "attribute": "data.hpCurrent"
         },
         {
-          "title": "Maximum HP",
+          "title": "Common.MaximumHP",
           "type": "number",
           "attribute": "data.hpMaximum"
         }
@@ -87,104 +87,109 @@
       "type": "group",
       "fields": [
         {
-          "title": "AC",
+          "title": "Common.AC",
           "type": "number",
           "attribute": "data.ac"
         },
         {
-          "title": "Experience",
+          "title": "Common.Experience",
           "type": "number",
           "attribute": "data.xp"
         },
         {
-          "title": "Level",
+          "title": "Common.Level",
           "type": "number",
           "attribute": "data.level"
-        }
+        },
+        {
+          "title": "Common.InitiativeBonus",
+          "type": "number",
+          "attribute": "data.initiativeBonus"
+        },
       ]
     },
     {
       "type": "group",
       "fields": [
         {
-          "title": "Ancestry",
+          "title": "Hero.Ancestry",
           "type": "picker",
           "attribute": "data.ancestry",
           "attributeType": "Ancestry"
         },
         {
-          "title": "Class",
+          "title": "Hero.Class",
           "type": "picker",
           "attribute": "data.class",
           "attributeType": "Class"
         },
         {
-          "title": "Title",
+          "title": "Hero.Title",
           "type": "text",
           "attribute": "data.title"
         },
         {
-          "title": "Alignment",
+          "title": "Hero.Alignment",
           "type": "picker",
           "attribute": "data.alignment",
           "attributeType": "Alignment"
         },
         {
-          "title": "Background",
+          "title": "Hero.Background",
           "type": "text",
           "attribute": "data.background"
         },
         {
-          "title": "Deity",
+          "title": "Hero.Deity",
           "type": "text",
           "attribute": "data.deity"
         },
       ]
     },
     {
-      "title": "Attacks",
+      "title": "Hero.Attacks",
       "type": "list",
       "attribute": "data.attacks",
       "form": {
-        "title": "Attack",
+        "title": "Common.Attack",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
             ]
           },
           {
-            "title": "Attack",
+            "title": "Common.Attack",
             "type": "group",
             "fields": [
               {
-                "title": "Attack",
+                "title": "Hero.Attack",
                 "type": "textArea",
                 "attribute": "attack"
               },
             ]
           },
           {
-            "title": "Damage",
+            "title": "Common.Damage",
             "type": "group",
             "fields": [
               {
-                "title": "Damage",
+                "title": "Common.Damage",
                 "type": "textArea",
                 "attribute": "damage"
               }
             ]
           },
           {
-            "title": "Other",
+            "title": "Common.Other",
             "type": "group",
             "fields": [
               {
-                "title": "Other",
+                "title": "Common.Other",
                 "type": "textArea",
                 "attribute": "other"
               }
@@ -194,21 +199,21 @@
       }
     },
     {
-      "title": "Talents",
+      "title": "Hero.Talents",
       "type": "list",
       "attribute": "data.talents",
       "form": {
-        "title": "Talent",
+        "title": "Hero.Talent",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
               {
-                "placeholder": "Description",
+                "placeholder": "Common.Description",
                 "type": "textArea",
                 "attribute": "descr"
               }
@@ -218,23 +223,23 @@
       }
     },
     {
-      "title": "Spells",
+      "title": "Hero.Spells",
       "type": "list",
       "attribute": "data.spells",
       "attributeType": "Spell",
       "form": {
-        "title": "Spell",
+        "title": "Hero.Spell",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
               
               {
-                "placeholder": "Description",
+                "placeholder": "Common.Description",
                 "type": "textArea",
                 "attribute": "descr"
               }
@@ -244,18 +249,18 @@
             "type": "group",
             "fields": [
               {
-                "title": "Expended",
+                "title": "Spell.Expended",
                 "type": "toggle",
                 "attribute": "expended"
               },
             ]
           },
           {
-            "title": "Reference",
+            "title": "Common.Reference",
             "type": "group",
             "fields": [
               {
-                "title": "Reference",
+                "title": "Common.Reference",
                 "type": "reference",
                 "attribute": "reference",
                 "attributeType": "Spell"
@@ -267,42 +272,42 @@
     },
     {
       "type": "group",
-      "title": "Wealth",
+      "title": "Hero.Wealth",
       "fields": [
         {
-          "title": "Gold",
+          "title": "Wealth.Gold",
           "type": "number",
           "attribute": "data.gp"
         },
         {
-          "title": "Silver",
+          "title": "Wealth.Silver",
           "type": "number",
           "attribute": "data.sp"
         },
         {
-          "title": "Copper",
+          "title": "Wealth.Copper",
           "type": "number",
           "attribute": "data.cp"
         }
       ]
     },
     {
-      "title": "Equipment",
+      "title": "Hero.Equipment",
       "type": "list",
       "attribute": "data.items",
       "attributeType": "Item",
       "form": {
-        "title": "Item",
+        "title": "Hero.Item",
         "sections": [
           {
             "type": "group",
             "fields": [
               {
-                "placeholder": "Name",
+                "placeholder": "Common.Name",
                 "attribute": "name"
               },
               {
-                "placeholder": "Description",
+                "placeholder": "Common.Description",
                 "type": "textArea",
                 "attribute": "descr"
               },
@@ -312,28 +317,28 @@
             "type": "group",
             "fields": [
               {
-                "title": "Quantity",
+                "title": "Item.Quantity",
                 "type": "number",
                 "attribute": "quantity"
               },
               {
-                "title": "Free to Carry",
+                "title": "Item.FreeToCarry",
                 "type": "toggle",
                 "attribute": "free"
               }, 
               {
-                "title": "Active",
+                "title": "Item.Active",
                 "type": "toggle",
                 "attribute": "active"
               },
             ]
           },
           {
-            "title": "Reference",
+            "title": "Common.Reference",
             "type": "group",
             "fields": [
               {
-                "title": "Reference",
+                "title": "Common.Reference",
                 "type": "reference",
                 "attribute": "reference",
                 "attributeType": "Item"

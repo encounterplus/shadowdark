@@ -19,16 +19,34 @@
       "padding": [6]
     },
     {
-      "value": "{{data.tier|default: '1'|prefix: 'Tier '}}, {{data.classes | join: ', '}}",
+      "value": "{{'Spell.Tier'|l}} {{data.tier|default: '1'}}, {{data.classes | join: ', '}}",
       "style": "subtitle",
     },
     {
       "type": "text",
-      "value": "{{data.duration|prefix: '**Duration**. '}}\n\n{{data.range|prefix: '**Range**. '}}",
+      "value": "{% if data.duration %}**{{'Spell.Duration'|l}}:** {{data.duration}} {% endif %}\n\n{% if data.range %}**{{'Spell.Range'|l}}:** {{data.range}} {% endif %}",
     },
     {
       "type": "text",
       "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Common.Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
     }
   ]
 }

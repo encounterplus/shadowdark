@@ -16,7 +16,8 @@
       "alignment": "center",
       "width": 0,
       "bgColor": "#000000",
-      "padding": [6]
+      "padding": [6],
+      "link": "https://www.google.com/search?tbm=isch&q=shadowdark+{{name}}"
     },
     {
       "value": "{{data.shortDescription}}",
@@ -34,12 +35,31 @@
     {
       "type": "text",
       "value": "{{descr}}",
+    },
+    {
+      "type": "text",
+      "title": "Common.Notes",
+      "value": "{{notes}}",
+    },
+    {
+      "type": "image",
+      "value": "{{image}}",
+      "link": "{{image}}"
+    },
+    {
+      "type": "text",
+      "value": "{{footer}}"
+    }, 
+    {
+      "type": "tags",
+      "attribute": "tags"
     }
   ],
   "attributes": [
     {
       "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
       "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.dex|default: 0}}{% endif %}",
     }
   ]
 }

@@ -19,7 +19,7 @@
       "padding": [6]
     },
     {
-      "value": "Level {{data.level}}, {{data.class}}",
+      "value": "{{'Common.Level'|l}} {{data.level}}, {{data.class}}",
       "style": "subtitle",
       "alignment": "center"
     },
@@ -33,7 +33,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "STR",
+              "value": "{{'Stat.STR'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -50,7 +50,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "DEX",
+              "value": "{{'Stat.DEX'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -67,7 +67,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "CON",
+              "value": "{{'Stat.CON'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -89,7 +89,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "INT",
+              "value": "{{'Stat.INT'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -106,7 +106,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "WIS",
+              "value": "{{'Stat.WIS'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -123,7 +123,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "CHA",
+              "value": "{{'Stat.CHA'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -145,7 +145,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Ancestry",
+              "value": "{{'Hero.Ancestry'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -163,7 +163,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Background",
+              "value": "{{'Hero.Background'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -185,7 +185,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Class",
+              "value": "{{'Hero.Class'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -203,7 +203,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Title",
+              "value": "{{'Hero.Title'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -225,7 +225,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Alignment",
+              "value": "{{'Common.Alignment'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -242,7 +242,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "Deity",
+              "value": "{{'Hero.Deity'|l}}",
               "style": "title5",
               "padding": [6, 12, 0, 0],
             },
@@ -264,14 +264,15 @@
           "spacing": 0,
           "views": [
             {
-              "value": "HP",
+              "value": "{{'Common.HP'|l}}",
               "style": "title4",
               "padding": [6, 12],
               "bgColor": "#000000",
               "width": -1
             },
             {
-              "value": "{{data.hpCurrent|default: 0}}",
+              "value": "{{data.hpCurrent|default: 0}} / {{data.hpMaximum|default: 0}}",
+              "link": "/health/",
               "padding": [8, 10]
             },
           ]
@@ -283,7 +284,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "AC",
+              "value": "{{'Common.AC'|l}}",
               "style": "title4",
               "padding": [6, 12],
               "bgColor": "#000000",
@@ -302,7 +303,7 @@
           "spacing": 0,
           "views": [
             {
-              "value": "XP",
+              "value": "{{'Common.XP'|l}}",
               "style": "title4",
               "padding": [6, 12],
               "bgColor": "#000000",
@@ -323,7 +324,7 @@
       "spacing": 0,
       "views": [
         {
-          "value": "Attacks",
+          "value": "{{'Hero.Attacks'|l}}",
           "style": "title4",
           "padding": [6, 12],
           "bgColor": "#000000",
@@ -343,7 +344,7 @@
       "spacing": 0,
       "views": [
         {
-          "value": "Talents",
+          "value": "{{'Hero.Talents'|l}}",
           "style": "title4",
           "padding": [6, 12],
           "bgColor": "#000000",
@@ -363,7 +364,7 @@
       "spacing": 0,
       "views": [
         {
-          "value": "Spells",
+          "value": "{{'Hero.Spells'|l}}",
           "style": "title4",
           "padding": [6, 12],
           "bgColor": "#000000",
@@ -371,7 +372,7 @@
         },
         {
           "type": "text",
-          "value": "{% for spell in data.spells %}[{{spell.name}}](spell) | Tier {{spell.definition.data.tier}}{% if spell.expended %} | Expended{% endif %}\n\n{% endfor %}",
+          "value": "{% for spell in data.spells %}[{{spell.name}}](spell) | {{'Spell.Tier'|l}} {{spell.definition.data.tier}}{% if spell.expended %} | {{'Spell.Expended'|l}}{% endif %}\n\n{% endfor %}",
           "padding": [8, 10]
         },
       ]
@@ -383,7 +384,7 @@
       "spacing": 0,
       "views": [
         {
-          "value": "Gear",
+          "value": "{{'Hero.Gear'|l}}",
           "style": "title4",
           "padding": [6, 12],
           "bgColor": "#000000",
@@ -399,6 +400,13 @@
     {
       "type": "text",
       "value": "{{descr}}",
+    }
+  ],
+  "attributes": [
+    {
+      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.dex.mod|default: 0}}{% endif %}",
     }
   ]
 }

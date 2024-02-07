@@ -5,7 +5,7 @@
       "type": "group",
       "fields": [
         {
-          "title": "Category",
+          "title": "Common.Category",
           "type": "picker",
           "attribute": "data.category",
           "attributeType": "ItemType"
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "title": "Short Description",
+      "title": "Common.ShortDescription",
       "type": "group",
       "fields": [
         {
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "title": "Basic Gear",
+      "title": "ItemType.BasicGear",
       "type": "group",
       "visibleIf": "{{data.category == 'basic'}}",
       "fields": [
@@ -32,13 +32,13 @@
           "attribute": "data.cost"
         },
         {
-          "title": "Quantity Per Gear Slot",
+          "title": "Item.QuantityPerGearSlot",
           "attribute": "data.quantityPerGearSlot"
         }
       ]
     },
     {
-      "title": "Weapon",
+      "title": "ItemType.Weapon",
       "type": "group",
       "visibleIf": "{{data.category == 'weapon'}}",
       "fields": [
@@ -52,23 +52,23 @@
           "attribute": "data.gearSlots"
         },
         {
-          "title": "Type",
+          "title": "Common.Type",
           "type": "multiPicker",
           "attribute": "data.weaponType",
           "attributeType": "WeaponType"
         },
         {
-          "title": "Range",
+          "title": "Item.Range",
           "type": "multiPicker",
           "attribute": "data.range",
           "attributeType": "Range"
         },
         {
-          "title": "Damage",
+          "title": "Item.Damage",
           "attribute": "data.damage",
         },
         {
-          "title": "Properties",
+          "title": "Item.Properties",
           "type": "multiPicker",
           "attribute": "data.properties",
           "attributeType": "WeaponProperty"
@@ -76,73 +76,73 @@
       ]
     },
     {
-      "title": "Armor",
+      "title": "ItemType.Armor",
       "type": "group",
       "visibleIf": "{{data.category == 'armor'}}",
       "fields": [
         {
-          "title": "Cost",
+          "title": "Item.Cost",
           "attribute": "data.cost"
         },
         {
-          "title": "Gear Slots",
+          "title": "Item.GearSlots",
           "type": "number",
           "attribute": "data.gearSlots"
         },
         {
-          "title": "AC",
+          "title": "Common.AC",
           "attribute": "data.ac"
         },
         {
-          "title": "Properties",
+          "title": "Item.Properties",
           "type": "list",
           "attribute": "data.properties"
         }
       ]
     },
     {
-      "title": "Bonus",
+      "title": "Item.Bonus",
       "type": "group",
       "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
-          "placeholder": "Bonus",
+          "placeholder": "Item.Bonus",
           "type": "textArea",
           "attribute": "data.bonus"
         }
       ]
     },
     {
-      "title": "Benefit",
+      "title": "Item.Benefit",
       "type": "group",
       "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
-          "placeholder": "Benefit",
+          "placeholder": "Item.Benefit",
           "type": "textArea",
           "attribute": "data.benefit"
         }
       ]
     },
     {
-      "title": "Curse",
+      "title": "Item.Curse",
       "type": "group",
       "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
-          "placeholder": "Curse",
+          "placeholder": "Item.Curse",
           "type": "textArea",
           "attribute": "data.curse"
         }
       ]
     },
     {
-      "title": "Personality",
+      "title": "Item.Personality",
       "type": "group",
       "visibleIf": "{{data.category == 'magic'}}",
       "fields": [
         {
-          "placeholder": "Personality",
+          "placeholder": "Item.Personality",
           "type": "textArea",
           "attribute": "data.personality"
         }

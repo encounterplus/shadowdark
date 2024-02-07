@@ -1,6 +1,6 @@
 {
   "author" : "The Arcane Library",
-  "banner" : "sd-banner.jpg",
+  "banner" : "sd-banner-unofficial.jpg",
   "descr" : "Shadowdark RPG is a fantasy adventure game where you and your companions delve into buried ruins, lost cities, spider-infested forests, and even fearsome dragon lairs in search of gold and glory.",
   "id" : "shadowdark",
   "name" : "Shadowdark",
@@ -8,6 +8,6 @@
   "repository" : "https:\/\/github.com\/encounterplus\/shadowdark",
   "shortDescr" : "Speed, danger, and simplicity.",
   "shortName" : "Shadowdark",
-  "version" : "0.9.5",
+  "version" : "0.9.6",
   "website" : "https:\/\/www.thearcanelibrary.com\/pages\/shadowdark"
 }
