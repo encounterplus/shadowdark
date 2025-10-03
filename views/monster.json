@@ -54,12 +54,5 @@
       "type": "tags",
       "attribute": "tags"
     }
-  ],
-  "attributes": [
-    {
-      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
-      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
-      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.dex|default: 0}}{% endif %}",
-    }
   ]
 }

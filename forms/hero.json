@@ -74,12 +74,12 @@
         {
           "title": "Common.CurrentHP",
           "type": "number",
-          "attribute": "data.hpCurrent"
+          "attribute": "data.hp.current"
         },
         {
           "title": "Common.MaximumHP",
           "type": "number",
-          "attribute": "data.hpMaximum"
+          "attribute": "data.hp.maximum"
         }
       ]
     },

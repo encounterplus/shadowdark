@@ -1,0 +1,18 @@
+{
+  // resolve data references
+  "references": [
+    "data.items",
+    "data.spells"
+  ],
+  // define global modifiers
+  "modifiers": [
+    "data.items"
+  ],
+  "attributes": [
+    {
+      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
+      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.dex.mod|default: 0}}{% endif %}",
+    }
+  ]
+}

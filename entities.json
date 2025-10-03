@@ -14,8 +14,7 @@
     "collection": {
       "label": "npcs"
     },
-    "loadable": true,
-    "role": "neutral"
+    "loadable": true
   },
   {
     "name": "Spell",
@@ -30,9 +29,7 @@
     "label": "item",
     "collection": {
       "label": "items"
-    },
-    "loadable": true,
-    "role": "neutral"
+    }
   },
   {
     "name": "Ancestry",
@@ -55,14 +52,13 @@
       "label": "heroes"
     },
     "loadable": true,
-    "role": "friendly"
+    "standalone": true
   },
   {
     "name": "Table",
     "label": "table",
     "collection": {
       "label": "tables"
-    },
-    "native": true
+    }
   }
 ]

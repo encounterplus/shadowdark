@@ -271,8 +271,8 @@
               "width": -1
             },
             {
-              "value": "{{data.hpCurrent|default: 0}} / {{data.hpMaximum|default: 0}}",
-              "link": "/health/",
+              "value": "{{data.hp.current|default: 0}} / {{data.hp.maximum|default: 0}}",
+              "link": "/health/data.hp",
               "padding": [8, 10]
             },
           ]
@@ -400,13 +400,6 @@
     {
       "type": "text",
       "value": "{{descr}}",
-    }
-  ],
-  "attributes": [
-    {
-      "inCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
-      "outCombatDetail": "{{'Common.AC'|l}} {{data.ac}} • {{'Common.LV'|l}} {{data.level}}",
-      "data.initiativeBonus": "#{% if data.initiativeBonus %}{{data.initiativeBonus}}{% else %}{{data.dex.mod|default: 0}}{% endif %}",
     }
   ]
 }
