@@ -21,5 +21,6 @@
     "NPC": {
       "role": "neutral"
     }
-  }
+  },
+  "5eCompatible": true
 }
